@@ -2,7 +2,7 @@
   "name": "markdown-it-remove",
   "version": "1.0.0",
   "description": "Remove Markdown syntax.",
-  "main": "dist/index.ts",
+  "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "prepare": "npm run build",
