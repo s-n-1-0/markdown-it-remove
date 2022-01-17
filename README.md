@@ -23,7 +23,8 @@ inline
 ## Import Plugin
 ```javascript
 const MarkdownIt = require('markdown-it'),
-      plugin = require('markdown-it-remove');
+      plugin = require('markdown-it-remove').removeMdPlugin;
+      //import {removeMdPlugin} from 'markdown-it-remove';
 const md = new MarkdownIt().use(plugin,{});
 var result = md.render(`# markdown-it!`);
 ```

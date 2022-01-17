@@ -1,8 +1,6 @@
-/* node ./test*/
-
-const MarkdownIt = require('markdown-it'),
-      plugin = require('../dist').removeMdPlugin;
-const md = new MarkdownIt().use(plugin,{});
+import * as MarkdownIt from 'markdown-it';
+import {removeMdPlugin} from '../dist';
+const md = new MarkdownIt().use(removeMdPlugin ,{});
 var result = md.render(`
 # markdown-it!
 ## markdown-it!
