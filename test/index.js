@@ -2,7 +2,9 @@
 
 const MarkdownIt = require('markdown-it'),
       plugin = require('../dist').removeMdPlugin;
-const md = new MarkdownIt().use(plugin,{});
+const md = new MarkdownIt().use(plugin,{
+    replaceNewlineValue:" "
+});
 var result = md.render(`
 # markdown-it!
 ## markdown-it!

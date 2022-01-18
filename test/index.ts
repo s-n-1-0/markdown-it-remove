@@ -1,6 +1,8 @@
 import * as MarkdownIt from 'markdown-it';
 import {removeMdPlugin} from '../dist';
-const md = new MarkdownIt().use(removeMdPlugin ,{});
+const md = new MarkdownIt().use(removeMdPlugin ,{
+    replaceNewlineValue:" "
+});
 var result = md.render(`
 # markdown-it!
 ## markdown-it!
