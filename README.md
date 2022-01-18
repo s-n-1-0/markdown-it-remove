@@ -32,6 +32,7 @@ var result = md.render(`# markdown-it!`);
 ## Options
 ```javascript
 const md = new MarkdownIt().use(plugin,{
+    replaceNewlineValue:" " //replace newline(\n\r) to "replaceNewlineValue" (default:null)
     removeTags:true,//<h1>markdown-it!</h1> -> markdown-it!
     escapeHtml:false //<h1>markdown-it!</h1> -> &lt;h1&gt;markdown-it!&lt;/h1&gt;
 });
